@@ -1,0 +1,43 @@
+<head>
+  <title>device-detection-example</title>
+</head>
+
+<body>
+  {{> body}}
+</body>
+
+<template name="body">
+  <div class="container {{#if isPhone}}container-phone{{/if}}">
+    <h1>Welcome on your {{device_type}}!</h1>
+    
+    {{deviceRender 'content'}}
+
+    <hr>
+
+    {{> preferences}}
+  </div>
+</template>
+
+<template name="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce scelerisque turpis eu felis semper vitae elementum enim suscipit. Nulla lobortis lobortis turpis sed porta. Cras a nibh justo, eu imperdiet sapien. In molestie mi nec tellus lobortis adipiscing. Cras turpis turpis, vulputate vitae iaculis non, dignissim at purus. Aenean faucibus ornare felis, sit amet porttitor ligula porta et. Pellentesque posuere, lacus sit amet elementum rutrum, felis nisi consequat lectus, nec facilisis risus odio vitae mauris. Sed et ultricies ligula. Quisque interdum porttitor risus, in hendrerit elit ornare sed. Ut bibendum elit et odio posuere vitae dictum nisi tincidunt. Nam tristique, orci vestibulum sodales porttitor, purus felis bibendum nisi, vitae feugiat justo velit non est.</p>
+</template>
+
+<template name="content_tv">
+  <p><strong>This text should only be visible on TVs.</strong> 
+  Proin id felis velit, quis tincidunt dui. Donec a nisi felis. Phasellus at mauris in est porta ullamcorper. Curabitur consectetur ipsum dictum purus tincidunt accumsan. Duis nec nunc risus, sit amet viverra ligula. Aenean rutrum semper arcu, vitae adipiscing neque posuere vitae. Cras at erat non nibh pellentesque pharetra ac ut metus. Morbi tempor sapien non nibh ornare commodo. Suspendisse potenti. Suspendisse dictum, diam et hendrerit scelerisque, metus magna porta turpis, et dapibus justo sapien sed dolor. Aenean in arcu ligula, id semper ante. Sed dapibus nisi dolor. Vivamus vel orci in sapien mattis auctor sed ac ipsum. Nullam condimentum eros a mauris vestibulum non luctus neque molestie.</p>
+</template>
+
+<template name="preferences">
+  {{! Example way to allow users to choose what version of your site to experience }}
+  <div class="footer">
+    <h3>View device specific versions of our site!</h3>
+    <p>
+      <a href="#" id="preferTV">TV</a> | 
+      <a href="#" id="preferTablet">Tablet</a> | 
+      <a href="#" id="preferPhone">Phone</a> | 
+      <a href="#" id="preferDesktop">Desktop</a> | 
+      <a href="#" id="preferBot">Bot</a>
+      {{#if hasPreference}}| <a href="#" id="preferNone">Clear Preferences</a>{{/if}}
+    </p>
+  </div>
+</template>

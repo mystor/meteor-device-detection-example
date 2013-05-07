@@ -1,0 +1,19 @@
+/* CSS declarations go here */
+
+.container {
+  width: 700px;
+  background-color: #FDE;
+  margin: auto;
+  padding: 10px;
+}
+
+.container-phone {
+  width: 95%;
+  background-color: #AAA;
+}
+
+.footer {
+  text-align: center;
+}
+
+
