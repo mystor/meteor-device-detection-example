@@ -1,9 +1,5 @@
 {
-  "meteor": {
-    "git": "https://github.com/meteor/meteor.git",
-    "branch": "master",
-    "commit": "bfe4b72ebec4367eaddcdf0887fcf5e649d9dcb8"
-  },
+  "meteor": {},
   "dependencies": {
     "basePackages": {
       "device-detection": {}
@@ -11,8 +7,8 @@
     "packages": {
       "device-detection": {
         "git": "https://github.com/Mystor/meteor-device-detection.git",
-        "tag": "v0.1.3",
-        "commit": "8d865454f32f8ffe1a5281b6e9f9488b2c9bc142"
+        "tag": "v0.1.4",
+        "commit": "9c8db3c2f7d7bd59b361697ab63f006c05aaf089"
       }
     }
   }
