@@ -6,9 +6,9 @@
     },
     "packages": {
       "device-detection": {
-        "git": "https://github.com/Mystor/meteor-device-detection.git",
-        "tag": "v0.1.4",
-        "commit": "9c8db3c2f7d7bd59b361697ab63f006c05aaf089"
+        "git": "https://github.com/mystor/meteor-device-detection.git",
+        "tag": "v0.1.6",
+        "commit": "a7909c2319a694b9caa959164485d7413dced435"
       }
     }
   }
